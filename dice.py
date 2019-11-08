@@ -7,6 +7,7 @@ import time
 def gif_roll():
     #roll = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"]
     roll = ["1.png","2.png","3.png","4.png","5.png","6.png"]
+    #if u want use png or jpeg files comment one of two
     gif_list =[]
     for i in roll:
         roll = Image.open(i)
@@ -27,6 +28,7 @@ def pressme():
     print(num)
     #num = str(num)+'.jpg'
     num = str(num)+'.png'
+    #if u want use png or jpeg files comment one of two
     img = Image.open(num)
     img = img.resize((350,350),Image.ANTIALIAS)
     photo = ImageTk.PhotoImage(img)
