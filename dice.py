@@ -24,7 +24,8 @@ def gif_roll():
 
 def pressme():
     gif_roll()
-    num = random.randint(1,6)
+    #num = random.randint(1,6)
+    num = int((random.random()*6)+1)
     print(num)
     #num = str(num)+'.jpg'
     num = str(num)+'.png'
